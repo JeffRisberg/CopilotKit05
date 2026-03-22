@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chat with your data - CopilotKit",
+  title: "CopilotKit05",
   description: "AI-powered dashboard assistant for data visualization and insights",
 };
 

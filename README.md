@@ -9,59 +9,29 @@ your metrics—all through a conversational interface powered by CopilotKit.
 ### Prerequisites
 
 - Node.js 18+ 
-- npm, yarn, or pnpm
+- npm
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/CopilotKit/CopilotKit.git
-   cd CopilotKit/examples/copilot-chat-with-your-data
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
 
    ```bash
-   pnpm install
+   npm install
    ```
 
-   <details>
-     <summary><b>Using other package managers</b></summary>
-     
-     ```bash
-     # Using yarn
-     yarn install
-     
-     # Using npm
-     npm install
-     ```
-   </details>
-
-3. Create a `.env` file in the project root and add your [OpenAI API Key](https://platform.openai.com/api-keys) and [Tavily API Key](https://tavily.com/api-key):
+2. Create a `.env` file in the project root and add your [OpenAI API Key](https://platform.openai.com/api-keys) and [Tavily API Key](https://tavily.com/api-key):
    ```
    OPENAI_API_KEY=your_openai_api_key
    TAVILY_API_KEY=your_tavily_api_key
    ```
 
-4. Start the development server:
+3. Start the server:
 
    ```bash
-   pnpm dev
+   npm run dev
    ```
 
-   <details>
-     <summary><b>Using other package managers</b></summary>
-     
-     ```bash
-     # Using yarn
-     yarn dev
-     
-     # Using npm
-     npm run dev
-     ```
-   </details>
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
 ### Query Parameters
 
@@ -220,31 +190,4 @@ export const CustomAssistantMessage = (props: AssistantMessageProps) => {
     </div>
   );
 };
-```
-
-### CSS Customization
-The dashboard uses CSS variables to customize the appearance of the CopilotKit components to match the dashboard's design system.
-
-<em>[app/globals.css](./app/globals.css)</em>
-
-```css
-:root {
-  --copilot-kit-primary-color: #3b82f6;
-  --copilot-kit-contrast-color: white;
-  --copilot-kit-secondary-contrast-color: #1e293b;
-  --copilot-kit-background-color: white;
-  --copilot-kit-muted-color: #64748b;
-  --copilot-kit-separator-color: rgba(0, 0, 0, 0.08);
-  --copilot-kit-scrollbar-color: rgba(0, 0, 0, 0.2);
-  /* Additional variables... */
-}
-
-/* Custom CopilotKit styling to match dashboard */
-.copilotKitSidebar .copilotKitWindow {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.copilotKitButton {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 ```

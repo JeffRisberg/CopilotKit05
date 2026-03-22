@@ -1,5 +1,5 @@
 {
-  "name": "copilot-form-filling",
+  "name": "CopilotKit05",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@copilotkit/react-core": "1.8.13",
-    "@copilotkit/react-ui": "1.8.13",
-    "@copilotkit/runtime": "1.8.13",
+    "@copilotkit/react-core": "^1.54.0",
+    "@copilotkit/react-ui": "^1.54.0",
+    "@copilotkit/runtime": "^1.54.0",
     "@hookform/resolvers": "^4.1.2",
     "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-popover": "^1.1.6",
@@ -23,7 +23,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^3.0.0",
     "lucide-react": "^0.476.0",
-    "next": "^15.5.0",
+    "next": "^16.0.0",
     "react": "^18.0.0",
     "react-day-picker": "9.0.0",
     "react-dom": "^18.0.0",
