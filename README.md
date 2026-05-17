@@ -40,6 +40,14 @@ The application supports the following optional query parameters:
 - `openCopilot=true` - Automatically opens the CopilotKit sidebar when the page loads
   - Example: `http://localhost:3000?openCopilot=true`
 
+### Example Prompts
+
+```
+tell me about revenue
+what are the top performing products?
+what region generates the most revenue?
+```
+
 ## 🧩 How It Works
 
 This demo showcases several powerful CopilotKit features:
