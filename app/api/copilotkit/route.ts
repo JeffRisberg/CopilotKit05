@@ -18,6 +18,7 @@ const runtime = new CopilotRuntime({
           },
         ],
         handler: async ({query}: { query: string }) => {
+          console.log(query);
           // can safely reference sensitive information like environment variables
           const tvly = tavily({apiKey: process.env.TAVILY_API_KEY});
           return await tvly.search(query, {max_results: 5});
@@ -28,6 +29,7 @@ const runtime = new CopilotRuntime({
 });
 
 export const POST = async (req: NextRequest) => {
+  console.log(req);
   const {handleRequest} = copilotRuntimeNextJSAppRouterEndpoint({
     runtime,
     serviceAdapter,
